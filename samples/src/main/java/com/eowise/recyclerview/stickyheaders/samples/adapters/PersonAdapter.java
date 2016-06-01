@@ -63,6 +63,7 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
         notifyItemRemoved(position);
     }
 
+
     @Override
     public void onEdit(final int position) {
         final EditText edit = new EditText(mContext);

@@ -24,6 +24,7 @@ public class PersonDataProvider {
         }
 
         buildAddedItems();
+        addedItems.add("ddd");
     }
 
 

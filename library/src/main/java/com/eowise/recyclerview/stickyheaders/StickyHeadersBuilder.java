@@ -1,6 +1,7 @@
 package com.eowise.recyclerview.stickyheaders;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 /**
  * Created by aurel on 16/10/14.
@@ -14,6 +15,7 @@ public class StickyHeadersBuilder {
     private boolean overlay;
     private boolean isSticky;
     private DrawOrder drawOrder;
+    private View top_view;
 
 
     public StickyHeadersBuilder() {
@@ -62,9 +64,15 @@ public class StickyHeadersBuilder {
         return this;
     }
 
+    public StickyHeadersBuilder addTop(View top_view)
+    {
+        this.top_view=top_view;
+        return this;
+    }
+
     public StickyHeadersItemDecoration build() {
 
-        HeaderStore store = new HeaderStore(recyclerView, headersAdapter, isSticky);
+        HeaderStore store = new HeaderStore(recyclerView, headersAdapter,top_view, isSticky);
 
         StickyHeadersItemDecoration decoration =  new StickyHeadersItemDecoration(store, overlay, drawOrder);
 
@@ -80,4 +88,6 @@ public class StickyHeadersBuilder {
 
         return decoration;
     }
+
+
 }
