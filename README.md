@@ -1,6 +1,12 @@
 recyclerview-stickyheaders
 ==========================
 
+just for learning !!!
+
+If you need sticky headers feature, have a look to [recyclerview-stickyheaders](https://github.com/eowise/recyclerview-stickyheaders)
+
+
+
 Recyclerview-stickyheaders is an Android library that makes it easy to integrate section headers in your ```RecyclerView```. These sections headers stick to the top as you can see below :
 
 Deprecated
