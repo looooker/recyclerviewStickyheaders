@@ -4,7 +4,8 @@
     <string name="edit">Edit</string>
 
     <string-array name="samples">
-        <item>Top</item>
+        <item>Vertical</item>
+        <item>Horizontal</item>
         <item>Overlay</item>
     </string-array>
 </resources>

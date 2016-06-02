@@ -116,13 +116,25 @@ public class MainActivity extends ActionBarActivity implements OnHeaderClickList
                 }
                 if (i == 0)
                 {
+                    list.setLayoutManager(new LinearLayoutManager(MainActivity.this, LinearLayoutManager.VERTICAL, false));
+
                     list.setAdapter(personAdapter);
                     list.removeItemDecoration(overlay);
+                    list.removeItemDecoration(top);
+                    list.addItemDecoration(top);
+                }else if (i == 1)
+                {
+                    list.setLayoutManager(new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false));
+
+                    list.setAdapter(personAdapter);
+                    list.removeItemDecoration(overlay);
+                    list.removeItemDecoration(top);
                     list.addItemDecoration(top);
                 }
                 else
                 {
                     list.setAdapter(personAdapter);
+                    list.removeItemDecoration(top);
                     list.removeItemDecoration(top);
                     list.addItemDecoration(overlay);
                 }
