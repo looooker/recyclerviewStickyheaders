@@ -54,15 +54,15 @@ public class MainActivity extends ActionBarActivity implements OnHeaderClickList
 
        final View topView = LayoutInflater.from(this).inflate(R.layout.top_header, null, false);
 
-//        topView.post(new Runnable()
-//        {
-//            @Override
-//            public void run()
-//            {
-//
-//
-//            }
-//        });
+        topView.post(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+
+
+            }
+        });
         top = new StickyHeadersBuilder()
                 .setAdapter(personAdapter)
                 .setRecyclerView(list)
